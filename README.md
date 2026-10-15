@@ -1,4 +1,4 @@
-# CO2 Emissions Canada — Answering Questions (Project 3)
+# CO2 Emissions Canada 
 
 A supervised machine learning analysis of the [CO2 Emissions Canada](https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles) dataset, built to answer one question:
 
@@ -25,7 +25,7 @@ This is a **supervised regression problem** — the target (`CO2 Emissions(g/km)
 
 `Make`, `Model`, and all four fuel-consumption columns (including mpg) were deliberately excluded from the main feature set: `Make`/`Model` have very high cardinality and wouldn't generalize to new vehicles, and the fuel-consumption columns are themselves downstream *outcomes* of a vehicle's design, not design characteristics — including them would leak the answer rather than explain it.
 
-An unsupervised **K-Means clustering** step (k=2) was also run as an independent, target-free sanity check, and split vehicles into a lower-emission group (219.4 g/km avg) and a higher-emission group (309.8 g/km avg) — the same pattern the regression models found.
+An unsupervised **K-Means clustering** step (k=2) was also run as an independent, target-free sanity check, and split vehicles into a lower-emission group (219.4 g/km avg) and a higher-emission group (309.8 g/km avg), the same pattern the regression models found.
 
 ## Key findings
 
@@ -59,4 +59,4 @@ Python, pandas, NumPy, scikit-learn (Linear Regression, Random Forest, K-Means, 
 
 ## Author
 
-Mariam Adekanye — BI Engineer, Calgary
+Mariam Adekanye 
